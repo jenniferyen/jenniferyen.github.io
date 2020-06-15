@@ -1,0 +1,21 @@
+* {
+    background: #000000
+}
+
+.main {
+    position: relative;
+}
+
+.base {
+    position: absolute;
+    top: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.graffiti {
+    position: absolute !important;
+    width: 75%;
+}
