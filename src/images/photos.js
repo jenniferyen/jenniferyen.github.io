@@ -2,7 +2,7 @@ import arches1 from "./DSC_0750.jpg";
 import budapest1 from "./DSC_0402.jpg";
 import budapest2 from "./DSC_0403.jpg";
 import budapest3 from "./DSC_0386.jpg";
-import budapest4 from "./DSC_0087.png";
+// import budapest4 from "./DSC_0087.png";
 import krakow1 from "./DSC_0028.jpg";
 import puertorico1 from "./DSC_0145.jpg";
 import puertorico2 from "./IMG_5609.jpg";
