@@ -27,7 +27,12 @@ const Base = (props) => {
   `)
 
   return(
-    <Img fluid={data.placeholderImage.childImageSharp.fluid} className={props.className} />
+    <div>
+      <Img fluid={data.placeholderImage.childImageSharp.fluid} className={props.className} />
+      <div className="socials">
+          <h1 className="name">Jennifer Yen</h1>
+      </div>
+    </div>
   )
 }
 

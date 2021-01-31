@@ -1,21 +1,41 @@
 * {
-    background: #000000
+    background: #000000;
 }
 
 .main {
-    position: relative;
 }
 
 .base {
-    position: absolute;
-    top: 25px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
+    position: relative;
 }
 
 .graffiti {
-    position: absolute !important;
+    margin: 0 auto;
     width: 75%;
+}
+
+.socials {
+    background: transparent;
+    position: relative;
+}
+
+.name {
+    background: transparent;
+    color: #ffffff;
+    font-size: 5vw;
+    left: 5em;
+    position: absolute;
+    top: -3em;
+}
+
+.bio {
+    color: #ffffff;
+    font-size: 1em;
+    margin: 0 auto;
+    padding-top: 100px;
+    width: 70%;
+}
+
+.photogallery {
+    padding-top: 100px;
 }
