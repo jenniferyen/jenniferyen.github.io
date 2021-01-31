@@ -25,7 +25,7 @@ function PhotoGallery() {
   };
 
   return (
-    <div className="photogallery">
+    <div className="photogallery" id="#photogallery">
       <Gallery photos={photos} columns={columns} direction={'column'} onClick={openLightbox} />
       <ModalGateway>
         {viewerIsOpen ? (
