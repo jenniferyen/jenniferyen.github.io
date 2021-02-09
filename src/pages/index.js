@@ -6,17 +6,26 @@ import ReactGA from 'react-ga';
 
 import "../styles/index.css"
 
-ReactGA.initialize('UA-176658398-2');
-ReactGA.pageview(window.location.pathname + window.location.search);
 
-const Index = () => (
-  <div className="main">
-    <div className="base">
-      <Base className={"graffiti"} />
-    </div>
-    <Bio/>
-    <PhotoGallery />
-  </div>
-)
+class Index extends React.Component {
+  componentDidMount() {
+    if (typeof window !== 'undefined') {  
+      ReactGA.initialize("UA-176658398-2"); 
+    }
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }
 
-export default Index
+  render() {
+    return(
+      <div className="main">
+      <div className="base">
+        <Base className={"graffiti"} />
+      </div>
+      <Bio/>
+      <PhotoGallery />
+      </div>
+    )
+  }
+}
+
+export default Index;
