@@ -1,7 +1,7 @@
-import React, { useState, useCallback } from "react";
-import Gallery from "react-photo-gallery";
-import Carousel, { Modal, ModalGateway } from "react-images";
-import { photos } from "../images/photos";
+import React, { useState, useCallback } from 'react';
+import Carousel, { Modal, ModalGateway } from 'react-images';
+import Gallery from 'react-photo-gallery';
+import { photos } from '../images/photos';
 
 function columns(containerWidth) {
   let columns = 1;
@@ -25,7 +25,7 @@ function PhotoGallery() {
   };
 
   return (
-    <div className="photogallery">
+    <div className='photogallery'>
       <Gallery photos={photos} columns={columns} direction={'column'} onClick={openLightbox} />
       <ModalGateway>
         {viewerIsOpen ? (

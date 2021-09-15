@@ -1,6 +1,6 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import React, { useEffect } from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image';
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -13,7 +13,7 @@ import Img from "gatsby-image"
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-const Base = (props) => {
+function Base(props) {
   const data = useStaticQuery(graphql`
     query {
       placeholderImage: file(relativePath: { eq: "graffiti.png" }) {
@@ -24,16 +24,20 @@ const Base = (props) => {
         }
       }
     }
-  `)
+  `);
 
-  return(
+  useEffect(() => {
+
+  });
+
+  return (
     <div>
       <Img fluid={data.placeholderImage.childImageSharp.fluid} className={props.className} />
-      <div className="socials">
-          <h1 className="name">Jennifer Yen</h1>
+      <div className='socials'>
+          <h1 className='name'>Jennifer Yen</h1>
       </div>
     </div>
   )
 }
 
-export default Base
+export default Base;

@@ -1,31 +1,29 @@
-import React from "react"
-import Base from "../components/base"
-import Bio from "../components/bio"
-import PhotoGallery from "../components/photogallery"
+import React, { useEffect } from 'react';
 import ReactGA from 'react-ga';
 
-import "../styles/index.css"
+import Base from '../components/base';
+import Bio from '../components/bio';
+import PhotoGallery from '../components/photogallery';
 
+import '../styles/index.css';
 
-class Index extends React.Component {
-  componentDidMount() {
+function Index() {
+  useEffect(() => {
     if (typeof window !== 'undefined') {  
       ReactGA.initialize("UA-176658398-2"); 
     }
     ReactGA.pageview(window.location.pathname + window.location.search);
-  }
+  }, []);
 
-  render() {
-    return(
-      <div className="main">
+  return (
+    <div className="main">
       <div className="base">
         <Base className={"graffiti"} />
       </div>
       <Bio/>
       <PhotoGallery />
-      </div>
-    )
-  }
+    </div>
+  )
 }
 
 export default Index;
